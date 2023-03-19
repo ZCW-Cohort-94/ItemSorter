@@ -16,8 +16,8 @@ public class NeutralCompareToTest {
         // given
         String itemName = "apple";
         Comparator<Item> nameComparator = (Comparator<Item>)new NameComparator();
-        Item item1 = new Item(null, itemName, null);
-        Item item2 = new Item(null, itemName, null);
+        Item item1 = new Item(1L, itemName, null);
+        Item item2 = new Item(2L, itemName, null);
 
         // when
         Integer comparisonValue = nameComparator.compare(item1, item2);
@@ -31,8 +31,8 @@ public class NeutralCompareToTest {
         // given
         String itemName = "banana";
         Comparator<Item> nameComparator = (Comparator<Item>)new NameComparator();
-        Item item1 = new Item(null, itemName, null);
-        Item item2 = new Item(null, itemName, null);
+        Item item1 = new Item(1L, itemName, null);
+        Item item2 = new Item(2L, itemName, null);
 
         // when
         Integer comparisonValue = nameComparator.compare(item1, item2);
@@ -46,8 +46,8 @@ public class NeutralCompareToTest {
         // given
         String itemName = "cherry";
         Comparator<Item> nameComparator = (Comparator<Item>)new NameComparator();
-        Item item1 = new Item(null, itemName, null);
-        Item item2 = new Item(null, itemName, null);
+        Item item1 = new Item(1L, itemName, null);
+        Item item2 = new Item(2L, itemName, null);
 
         // when
         Integer comparisonValue = nameComparator.compare(item1, item2);
